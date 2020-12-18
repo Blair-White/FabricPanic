@@ -18,14 +18,15 @@ using UnityEngine;
 /// 
 /// -Designers create new 'Fabric' object, and add it to the master table
 /// 
-/// -Programmers Create a PlayerFabricTable (The fabrics available to the Player)
+/// -Programmers Create a Fabric List<ScriptableFabric> in the player with desired logic
 ///       - This is done by looping through the master table and adding fabrics to 
 ///       the player table, if the player meets the level requirement for that fabric.
 ///       
 /// -Programmers See Below for basic implementations.
-///         -See SampleScene -> SamplePlayerFabricController
+///         -See SampleScene
 ///         -See FabricScriptableObject Script for enums or just play with code autofill.               
-///  
+///                                         -ie. ScriptableFabric myFabric
+///                                              myFabric.look through here<-
 /// 
 /// -In General You can code how you like, but I would prefer some of the example structure below. 
 /// 
@@ -67,6 +68,7 @@ public class ReadmeFabricImplementation : MonoBehaviour
             case States.MovingFabrics:
                 break;
             case States.LevelingUp://States should contain functions not logic. Keep this clean as possible. 
+                                   //Of course you might need an if statement or whatever but ya..
                 CheckFabricList();
                 break;
             case States.ClosingScene:
@@ -80,7 +82,7 @@ public class ReadmeFabricImplementation : MonoBehaviour
     {
         for (int i = 0; i < _FabricMasterTable.Fabrics.Length; i++)
         {
-            if (samplePlayerLevel > _FabricMasterTable.Fabrics[i].PlayerLevelRequirement)
+            if (samplePlayerLevel >= _FabricMasterTable.Fabrics[i].PlayerLevelRequirement)
             {
                 AddFabricToPlayer(_FabricMasterTable.Fabrics[i]); //notice that adding and checking are different purposes
             }
