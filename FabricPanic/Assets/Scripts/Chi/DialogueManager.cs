@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public Text nameText;
-    public Text dialogueText;
+    
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI dialogueText;
 
     private Queue<string> lines;
     void Start()
