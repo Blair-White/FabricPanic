@@ -8,16 +8,27 @@ public class DropController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "InventoryObject")
+        if (collision.gameObject.name == "InventoryObject" )
         {
-            collision.gameObject.GetComponent<DragController>().isColliding = true;
-
-           if(inventoryList.Count<=3) 
-           {
-                collision.gameObject.transform.position = new Vector3( 2 * (inventoryList.Count),transform.position.y, transform.position.z);
-                inventoryList.Add(collision.gameObject);
-                //Debug.Log(collision.gameObject.transform.position);
-           }
+           collision.gameObject.GetComponent<DragController>().isColliding = true;
+           inventoryList.Add(collision.gameObject);
+        }
+    }
+    void Update()
+    {
+        if (inventoryList.Count > 0)
+        {
+            GameObject lastItem = inventoryList[inventoryList.Count - 1];
+            if(lastItem.GetComponent<DragController>().canBeDropped == true)
+            {
+                // Assuming we only want 3 items on the shelf
+                if (inventoryList.Count <= 3)
+                {
+                    lastItem.transform.position = new Vector3(1 + 2 * (inventoryList.Count - 1), transform.position.y, transform.position.z);
+                    Debug.Log("Dropped at" + lastItem.transform.position);
+                    lastItem.GetComponent<DragController>().isColliding = false;
+                }
+            }
         }
     }
 }

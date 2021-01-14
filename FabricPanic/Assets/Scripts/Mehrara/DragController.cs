@@ -6,21 +6,27 @@ public class DragController : MonoBehaviour
 {
     private Vector3 mOffset;
     private float mZCoord;
-    public bool isColliding;
+
+    public bool isColliding, isMouseUp, canBeDropped;
 
     void Start()
     {
         isColliding = false;
+        isMouseUp = true;
+        canBeDropped = false;
     }
     void OnMouseDown()
     {
+        isMouseUp = false;
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-        
 
         //Store offset = gameobject world pos - mouse world pos
         mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
     }
-
+    void OnMouseUp()
+    {
+        isMouseUp = true;
+    }
     private Vector3 GetMouseAsWorldPoint()
     {
         //Pixel coordinates of mouse (x,y)
@@ -35,9 +41,20 @@ public class DragController : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if (!isColliding)
+        if (!canBeDropped)
         { 
-            transform.position = GetMouseAsWorldPoint() + mOffset; 
+            transform.position = GetMouseAsWorldPoint() + mOffset;
+        }
+    }
+    void Update ()
+    {
+        if (isColliding && isMouseUp)
+        {
+            canBeDropped = true;
+        }
+        else
+        {
+            canBeDropped = false;
         }
     }
 }
