@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiniGameManager : MonoBehaviour
+public class MiniGameManager_Demo : MonoBehaviour
 {
     public enum States //These are our Game States. enums are very useful as you will see in the update function. 
     {
