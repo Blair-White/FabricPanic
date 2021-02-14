@@ -13,6 +13,12 @@ public class DropController : MonoBehaviour
            collision.gameObject.GetComponent<DragController>().isColliding = true;
            inventoryList.Add(collision.gameObject);
         }
+
+        if (collision.gameObject.name == "DeliveryBolt")
+        {
+            collision.gameObject.GetComponent<DragController>().isColliding = true;
+            inventoryList.Add(collision.gameObject);
+        }
     }
     void Update()
     {
