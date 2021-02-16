@@ -5,8 +5,10 @@ using UnityEngine;
 public class DragController : MonoBehaviour
 {
     [SerializeField]
-    private GameObject Item;
-
+    private GameObject Fabric;
+    [SerializeField]
+    private GameObject Basket;
+    private FabricDrop fabricDrop;
     private Vector3 mOffset;
     private float mZCoord;
 
@@ -17,6 +19,7 @@ public class DragController : MonoBehaviour
         isColliding = false;
         isMouseUp = true;
         canBeDropped = false;
+        fabricDrop = Basket.GetComponent<FabricDrop>();
     }
     void OnMouseDown()
     {
@@ -55,7 +58,8 @@ public class DragController : MonoBehaviour
         {
             canBeDropped = true;
             isColliding = false;
-            Item.SetActive(false);
+            fabricDrop.score++;
+            Fabric.SetActive(false);
         }
         else
         {

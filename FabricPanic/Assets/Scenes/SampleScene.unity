@@ -1064,6 +1064,14 @@ PrefabInstance:
       propertyPath: Item
       value: 
       objectReference: {fileID: 1369542849}
+    - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
+      propertyPath: Basket
+      value: 
+      objectReference: {fileID: 999685889}
+    - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
+      propertyPath: Fabric
+      value: 
+      objectReference: {fileID: 1369542849}
     - target: {fileID: 86911694223444406, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1384,10 +1392,18 @@ PrefabInstance:
       propertyPath: BasketType
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2954225065280808634, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+      propertyPath: Basket
+      value: 
+      objectReference: {fileID: 1058972923}
     - target: {fileID: 3034218863875982195, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c75c7c1b92b7d7a49838a907cc8bfcf6, type: 3}
+    - target: {fileID: 4251182559477941552, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+      propertyPath: basket
+      value: 
+      objectReference: {fileID: 1058972923}
     - target: {fileID: 4603436360842077946, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1783,10 +1799,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1737471754}
     m_Modifications:
+    - target: {fileID: 2954225065280808634, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+      propertyPath: Basket
+      value: 
+      objectReference: {fileID: 1985852626}
     - target: {fileID: 3034218863875982195, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 031eda30576c5a74bb40bc6c2f5f3ab9, type: 3}
+    - target: {fileID: 4251182559477941552, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+      propertyPath: basket
+      value: 
+      objectReference: {fileID: 1985852626}
     - target: {fileID: 4603436360842077946, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2853,6 +2877,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3971164700412308331, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
   m_PrefabInstance: {fileID: 1536981644}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &999685889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8814389815635444386, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+  m_PrefabInstance: {fileID: 1132544690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1058972923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8814389815635444386, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+  m_PrefabInstance: {fileID: 296987032}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1132544690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2864,6 +2898,14 @@ PrefabInstance:
       propertyPath: BasketType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2954225065280808634, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+      propertyPath: Basket
+      value: 
+      objectReference: {fileID: 999685889}
+    - target: {fileID: 4251182559477941552, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+      propertyPath: basket
+      value: 
+      objectReference: {fileID: 999685889}
     - target: {fileID: 4603436360842077946, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2983,10 +3025,18 @@ PrefabInstance:
       propertyPath: BasketType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2954225065280808634, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+      propertyPath: Basket
+      value: 
+      objectReference: {fileID: 1956305629}
     - target: {fileID: 3034218863875982195, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 57aa9689b72dc7544a7eaec076b81b60, type: 3}
+    - target: {fileID: 4251182559477941552, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+      propertyPath: basket
+      value: 
+      objectReference: {fileID: 1956305629}
     - target: {fileID: 4603436360842077946, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3895,6 +3945,14 @@ PrefabInstance:
       propertyPath: Item
       value: 
       objectReference: {fileID: 993029044}
+    - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
+      propertyPath: Basket
+      value: 
+      objectReference: {fileID: 1058972923}
+    - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
+      propertyPath: Fabric
+      value: 
+      objectReference: {fileID: 993029044}
     - target: {fileID: 86911694223444406, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4205,6 +4263,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
       propertyPath: Item
+      value: 
+      objectReference: {fileID: 692691546}
+    - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
+      propertyPath: Basket
+      value: 
+      objectReference: {fileID: 1956305629}
+    - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
+      propertyPath: Fabric
       value: 
       objectReference: {fileID: 692691546}
     - target: {fileID: 86911694223444406, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
@@ -5449,6 +5515,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934168592}
   m_CullTransparentMesh: 0
+--- !u!1 &1956305629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8814389815635444386, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+  m_PrefabInstance: {fileID: 1144001723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1978719412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,6 +5592,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978719412}
   m_CullTransparentMesh: 0
+--- !u!1 &1985852626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8814389815635444386, guid: 777c87d7ed0155648a154060a878bfb0, type: 3}
+  m_PrefabInstance: {fileID: 512347295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2009000454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5832,6 +5908,14 @@ PrefabInstance:
       propertyPath: Item
       value: 
       objectReference: {fileID: 689348238}
+    - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
+      propertyPath: Fabric
+      value: 
+      objectReference: {fileID: 689348238}
+    - target: {fileID: -1515313191337575018, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
+      propertyPath: Basket
+      value: 
+      objectReference: {fileID: 1985852626}
     - target: {fileID: 86911694223444406, guid: 5846330bf8e96dc479e4819e98082b1e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

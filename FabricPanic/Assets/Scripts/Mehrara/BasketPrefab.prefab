@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 8475424413161141604}
   - component: {fileID: 2122252522770326366}
   - component: {fileID: 2897273370076501398}
+  - component: {fileID: 4251182559477941552}
   m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
@@ -209,6 +210,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4251182559477941552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5264555254520699689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df98849d89ae8734b9ed8a23f902fb7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8182477433362963211
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BasketType: 0
-  inventoryList: []
 --- !u!50 &6581320797513608373
 Rigidbody2D:
   serializedVersion: 4
