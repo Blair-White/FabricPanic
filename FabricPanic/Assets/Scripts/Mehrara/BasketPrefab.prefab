@@ -324,9 +324,10 @@ GameObject:
   - component: {fileID: 4603436360842077946}
   - component: {fileID: 9002224216660900401}
   - component: {fileID: 8138188701495089141}
-  - component: {fileID: 6715016935472993497}
+  - component: {fileID: 2954225065280808634}
+  - component: {fileID: 6581320797513608373}
   m_Layer: 0
-  m_Name: Basket 1
+  m_Name: BasketPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +341,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8814389815635444386}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00006522666}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9170729649341986627}
@@ -390,7 +391,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6715016935472993497
+--- !u!114 &2954225065280808634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,6 +400,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 8814389815635444386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 014d3983b2494a64ba415b65ee825dbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 61c04d156ebfcb24bbdde7d4ddc167b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BasketType: 0
+  inventoryList: []
+--- !u!50 &6581320797513608373
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814389815635444386}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
