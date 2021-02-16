@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DragController : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject Item;
+
     private Vector3 mOffset;
     private float mZCoord;
 
@@ -51,6 +54,8 @@ public class DragController : MonoBehaviour
         if (isColliding && isMouseUp)
         {
             canBeDropped = true;
+            isColliding = false;
+            Item.SetActive(false);
         }
         else
         {
