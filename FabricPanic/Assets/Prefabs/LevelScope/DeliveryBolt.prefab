@@ -123,6 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641002e470edcd04a9bcb57f26f7d9a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fabric: {fileID: 0}
+  Basket: {fileID: 0}
   isColliding: 0
   isMouseUp: 0
   canBeDropped: 0
@@ -138,7 +140,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3

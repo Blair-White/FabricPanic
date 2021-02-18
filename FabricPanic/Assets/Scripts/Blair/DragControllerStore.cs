@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragController : MonoBehaviour
+public class DragControllerStore : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject Fabric;
-    [SerializeField]
-    private GameObject Basket;
+  
     private FabricDrop fabricDrop;
     private Vector3 mOffset;
     private float mZCoord;
@@ -20,7 +17,7 @@ public class DragController : MonoBehaviour
         isColliding = false;
         isMouseUp = true;
         canBeDropped = false;
-        fabricDrop = Basket.GetComponent<FabricDrop>();
+        
     }
     void OnMouseDown()
     {
@@ -57,29 +54,12 @@ public class DragController : MonoBehaviour
     {
         if (isPlaced) return;
 
-        if(isRushRequest)
-        {
-            if (isColliding && isMouseUp)
-            {
-                canBeDropped = true;
-                isColliding = false;
-                fabricDrop.score++;
-                Fabric.SetActive(false);
-            }
-            else
-            {
-                canBeDropped = false;
-            }
-
-        }
-        
         if(isStorePlaceable)
         {
             if (isColliding && isMouseUp)
             {
                 canBeDropped = true;
                 isColliding = false;
-                Fabric.transform.position = Basket.transform.position;
                 isPlaced = true;
             }
             else
