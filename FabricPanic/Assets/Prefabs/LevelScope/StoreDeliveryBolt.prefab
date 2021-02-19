@@ -147,6 +147,8 @@ MonoBehaviour:
   isMouseUp: 0
   canBeDropped: 0
   startPosition: {x: 0, y: 0, z: 0}
+  currentHoverObject: {fileID: 0}
+  dropEffect: {fileID: 167058, guid: 08829f9f19dc71742a2c920d1ca565a7, type: 3}
 --- !u!54 &5760779921098206945
 Rigidbody:
   m_ObjectHideFlags: 0

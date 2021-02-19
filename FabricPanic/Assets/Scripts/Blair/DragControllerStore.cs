@@ -12,7 +12,7 @@ public class DragControllerStore : MonoBehaviour
     public bool isColliding, isMouseUp, canBeDropped;
     private bool isPlaced;
     public Vector3 startPosition;
-    public GameObject currentHoverObject;
+    public GameObject currentHoverObject, previousObject, dropEffect;
  
     void Start()
     {
@@ -26,8 +26,6 @@ public class DragControllerStore : MonoBehaviour
         isPlaced = false;
         isMouseUp = false;
         mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-        if (currentHoverObject != null) { currentHoverObject.GetComponent<Collider>().enabled = true; }
-
         //Store offset = gameobject world pos - mouse world pos
         mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
         
@@ -35,7 +33,7 @@ public class DragControllerStore : MonoBehaviour
     void OnMouseUp()
     {
         isMouseUp = true;
-  
+        this.GetComponent<Outline>().enabled = false;
     }
     private Vector3 GetMouseAsWorldPoint()
     {
@@ -51,7 +49,7 @@ public class DragControllerStore : MonoBehaviour
 
     void OnMouseDrag()
     {
-       
+        this.GetComponent<Outline>().enabled = true;
         if (!canBeDropped)
         {
             transform.position = GetMouseAsWorldPoint() + mOffset + new Vector3(-1,0,0);
@@ -103,6 +101,13 @@ public class DragControllerStore : MonoBehaviour
         
         }
         
+
+        if(!isMouseUp)
+        {
+            if (previousObject != null) { previousObject.GetComponent<Collider>().enabled = true; }
+            if (currentHoverObject!= null) { currentHoverObject.GetComponent<Collider>().enabled = true; }
+        }
+
         if(isMouseUp)
         {
             if (currentHoverObject == null)
@@ -120,7 +125,10 @@ public class DragControllerStore : MonoBehaviour
                 {
                     startPosition = currentHoverObject.transform.position;
                     currentHoverObject.GetComponent<Collider>().enabled = false;
-                    currentHoverObject = null; this.GetComponent<Outline>().OutlineWidth = 2;
+                    previousObject = currentHoverObject;
+                    GameObject o = Instantiate(dropEffect); o.transform.position = currentHoverObject.transform.position;
+                    o.GetComponent<KillEffect>().ps.GetComponent<ParticleSystem>().transform.position = o.transform.position;
+                    currentHoverObject = null; this.GetComponent<Outline>().OutlineWidth = 2;    
                 }
                 else
                 {
