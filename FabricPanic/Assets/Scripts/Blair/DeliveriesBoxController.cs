@@ -10,6 +10,8 @@ public class DeliveriesBoxController : MonoBehaviour
     private GameObject BoltObject;
     private GameObject WaypointHolder;
     public List<Vector3> PopOutWaypoints;
+    public bool isActivated, isBusyGivingFabric, isTutorial;
+    private Vector3 startingBoltPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -19,31 +21,40 @@ public class DeliveriesBoxController : MonoBehaviour
        {
             PopOutWaypoints.Add(WaypointHolder.transform.GetChild(i).transform.position);
        }
+        startingBoltPoint = PopOutWaypoints[7];
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(isActivated && !isBusyGivingFabric)
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            
-            if(Physics.Raycast (ray,  out hit))
+            if (Input.GetMouseButtonDown(0))
             {
-                if(hit.transform.name == "DeliveriesBox")
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out hit))
                 {
-                    if(BoltCountInBox > 0)
+                    if (hit.transform.name == "DeliveriesBox")
                     {
-                        CreateBoltFromBox();
-                        BoltCountInBox--;
-                        Debug.Log("asdfadf");
+                        if (BoltCountInBox > 0)
+                        {
+                            CreateBoltFromBox();
+                            BoltCountInBox--;
+                            isBusyGivingFabric = true;
+                            if(isTutorial)
+                            {
+                                GameObject pointer = GameObject.Find("pointer"); pointer.SetActive(false);
+                            }
+                        }
                     }
                 }
-            }
-        
-        }
 
+            }
+
+
+        }
 
     }
 
@@ -54,6 +65,7 @@ public class DeliveriesBoxController : MonoBehaviour
         foreach (var waypoint in PopOutWaypoints)
         {
             mBoltCreated.GetComponent<DeliveryBolt>().WaypointsReceived.Add(waypoint);
+            mBoltCreated.GetComponent<DragControllerStore>().startPosition = startingBoltPoint;
         }
     }
 }

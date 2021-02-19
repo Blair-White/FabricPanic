@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameDialogueIntro : MonoBehaviour
 {
     public GameObject dialog1, dialog2, dialog3, dialog4, dialog5, dialog6, dialog7, dialog8, dialog9;
-    public GameObject pointer, tuttext1;
+    public GameObject pointer, tuttext1, deliveryBoxA;
     private float endingCount;
 
     public int iState;
@@ -56,6 +56,7 @@ public class GameDialogueIntro : MonoBehaviour
             case 5: 
                 dialog5.SetActive(false);
                 pointer.SetActive(true);
+                deliveryBoxA.GetComponent<DeliveriesBoxController>().isActivated = true; ;
                 break;
             case 6:
                 dialog6.SetActive(false);

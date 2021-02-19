@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BoltCountInBox: 10
-  BoltObject: {fileID: 706288420214849454, guid: 915ea6f3def075c408405756b96a22fa, type: 3}
+  BoltObject: {fileID: 706288420214849454, guid: 906484f630deb3543ad94d64c16c628d, type: 3}
   PopOutWaypoints: []
 --- !u!1 &5942091219113959723
 GameObject:

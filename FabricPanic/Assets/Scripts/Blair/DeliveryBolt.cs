@@ -5,7 +5,7 @@ using UnityEngine;
 public class DeliveryBolt : MonoBehaviour
 {
     public List<Vector3> WaypointsReceived;
-    
+    public bool isFinishedMove;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,10 @@ public class DeliveryBolt : MonoBehaviour
             {
                 WaypointsReceived.RemoveAt(0);
             }
-        }  
+        }
+        else
+        {
+            isFinishedMove = true;
+        }
     }
 }
