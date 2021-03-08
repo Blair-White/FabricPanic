@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4548749251561767079}
   - component: {fileID: -1515313191337575018}
   - component: {fileID: 2103908771964396592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fabric
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,6 +130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641002e470edcd04a9bcb57f26f7d9a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fabric: {fileID: 0}
+  Basket: {fileID: 0}
   isColliding: 0
   isMouseUp: 0
   canBeDropped: 0
