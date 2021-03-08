@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4548749251561767079}
   - component: {fileID: -1515313191337575018}
   - component: {fileID: 2103908771964396592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fabric
   m_TagString: Untagged
   m_Icon: {fileID: 0}

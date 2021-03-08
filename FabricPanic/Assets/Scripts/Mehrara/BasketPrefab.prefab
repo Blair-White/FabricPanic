@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df98849d89ae8734b9ed8a23f902fb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basket: {fileID: 0}
 --- !u!1 &8182477433362963211
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +418,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BasketType: 0
+  fabricsTotal: 1
+  fabricsCollected: 0
+  score: 0
+  isCompleted: 0
 --- !u!50 &6581320797513608373
 Rigidbody2D:
   serializedVersion: 4

@@ -12,11 +12,11 @@ public class DragController : MonoBehaviour
     private Vector3 mOffset;
     private float mZCoord;
 
-    public bool isColliding, isMouseUp, canBeDropped;
-    public bool isRushRequest, isStorePlaceable;
-    private bool isPlaced;
+    public bool isColliding, isMouseUp, canBeDropped, wrongColliding;
+
     void Start()
     {
+        wrongColliding = false;
         isColliding = false;
         isMouseUp = true;
         canBeDropped = false;
@@ -55,40 +55,25 @@ public class DragController : MonoBehaviour
     }
     void Update ()
     {
-        if (isPlaced) return;
-
-        if(isRushRequest)
+        if (isMouseUp)
         {
-            if (isColliding && isMouseUp)
-            {
-                canBeDropped = true;
+            canBeDropped = true;
+            if (isColliding)
+            { 
                 isColliding = false;
                 fabricDrop.score++;
-                Fabric.SetActive(false);
+                fabricDrop.fabricsCollected++;
+                Fabric.SetActive(false); 
             }
-            else
+            else if (wrongColliding)
             {
-                canBeDropped = false;
+                wrongColliding = false; 
+                Fabric.GetComponent<FabricScript>().resetPos = true;
             }
-
         }
-        
-        if(isStorePlaceable)
+        else
         {
-            if (isColliding && isMouseUp)
-            {
-                canBeDropped = true;
-                isColliding = false;
-                Fabric.transform.position = Basket.transform.position;
-                isPlaced = true;
-            }
-            else
-            {
-                canBeDropped = false;
-            }
-
-
+            canBeDropped = false;
         }
-
     }
 }
