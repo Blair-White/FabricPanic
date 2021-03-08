@@ -3870,6 +3870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RushRequest
       objectReference: {fileID: 0}
+    - target: {fileID: 4971883301233450678, guid: a9bcd6fa12035ce4fba511bad328ca6d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4971883301233450681, guid: a9bcd6fa12035ce4fba511bad328ca6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.9614

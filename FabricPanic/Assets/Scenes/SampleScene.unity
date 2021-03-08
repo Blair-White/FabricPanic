@@ -3864,6 +3864,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 974675414}
     m_Modifications:
+    - target: {fileID: 4899060979016064032, guid: 14db6d682de23404b908627300828b43, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4899060979016064034, guid: 14db6d682de23404b908627300828b43, type: 3}
       propertyPath: m_Name
       value: InventoryObject
@@ -3932,6 +3936,10 @@ PrefabInstance:
     - target: {fileID: 4971883301233450678, guid: a9bcd6fa12035ce4fba511bad328ca6d, type: 3}
       propertyPath: m_Name
       value: RushRequest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971883301233450678, guid: a9bcd6fa12035ce4fba511bad328ca6d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4971883301233450681, guid: a9bcd6fa12035ce4fba511bad328ca6d, type: 3}
       propertyPath: m_LocalPosition.x
