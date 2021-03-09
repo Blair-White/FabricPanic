@@ -1,9 +1,17 @@
-﻿using System.Collections;
+﻿/*
+ CHANGE LOG
+
+- 210309: Kyle changed if (hit.transform.name == this.transform.name) //[KH] 210309
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DeliveriesBoxController : MonoBehaviour
 {
+    [SerializeField]
+    private Collider touch_collider; //[KH] 210309
     [SerializeField]
     private int BoltCountInBox;
     [SerializeField]
@@ -36,7 +44,7 @@ public class DeliveriesBoxController : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    if (hit.transform.name == "DeliveriesBox")
+                    if (hit.collider == touch_collider) //[KH] 210309
                     {
                         if (BoltCountInBox > 0)
                         {
