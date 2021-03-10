@@ -23,6 +23,7 @@ public class ScriptableFabric : ScriptableObject
     [SerializeField] public FabricTrait FabricTraits;
     [SerializeField] public FabricHolliday FabricHolliday;
     [SerializeField] public FabricSeason _FabricSeason;
+
     [SerializeField] public Material AssetMaterial;
     [SerializeField] public Sprite UiAsset;   
 }
