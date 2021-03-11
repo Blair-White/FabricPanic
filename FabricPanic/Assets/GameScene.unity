@@ -1864,7 +1864,7 @@ GameObject:
   - component: {fileID: 302751310}
   - component: {fileID: 302751309}
   m_Layer: 5
-  m_Name: Claire
+  m_Name: ButtonsTheCat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4014,15 +4014,15 @@ RectTransform:
   m_GameObject: {fileID: 538520686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.5372, y: 5.5372, z: 5.5372}
+  m_LocalScale: {x: 0.5739596, y: 0.5739596, z: 0.5739596}
   m_Children: []
   m_Father: {fileID: 494547419}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.42000002, y: 0.44000003}
-  m_AnchorMax: {x: 0.5, y: 0.44000003}
-  m_AnchoredPosition: {x: 445, y: -104}
-  m_SizeDelta: {x: 92, y: 100}
+  m_AnchorMax: {x: 0.42000002, y: 0.44000003}
+  m_AnchoredPosition: {x: 411, y: -104}
+  m_SizeDelta: {x: 603, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &538520688
 MonoBehaviour:
@@ -5466,15 +5466,15 @@ RectTransform:
   m_GameObject: {fileID: 784320617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -5.5372, y: 5.5372, z: 5.5372}
+  m_LocalScale: {x: -0.5739596, y: 0.5739596, z: 0.5739596}
   m_Children: []
   m_Father: {fileID: 550001650}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.42000002, y: 0.44000003}
-  m_AnchorMax: {x: 0.5, y: 0.44000003}
+  m_AnchorMax: {x: 0.42000002, y: 0.44000003}
   m_AnchoredPosition: {x: -486, y: -104}
-  m_SizeDelta: {x: 92, y: 100}
+  m_SizeDelta: {x: 694, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &784320619
 MonoBehaviour:
@@ -12361,15 +12361,15 @@ RectTransform:
   m_GameObject: {fileID: 1716201979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -5.5372, y: 5.5372, z: 5.5372}
+  m_LocalScale: {x: -0.5739596, y: 0.5739596, z: 0.5739596}
   m_Children: []
   m_Father: {fileID: 550001650}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.42000002, y: 0.44000003}
-  m_AnchorMax: {x: 0.5, y: 0.44000003}
+  m_AnchorMax: {x: 0.42000002, y: 0.44000003}
   m_AnchoredPosition: {x: -486, y: -104}
-  m_SizeDelta: {x: 92, y: 100}
+  m_SizeDelta: {x: 643, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1716201981
 MonoBehaviour:
@@ -13895,7 +13895,7 @@ GameObject:
   - component: {fileID: 1871557300}
   - component: {fileID: 1871557299}
   m_Layer: 5
-  m_Name: Claire
+  m_Name: ButtonsTheCat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
