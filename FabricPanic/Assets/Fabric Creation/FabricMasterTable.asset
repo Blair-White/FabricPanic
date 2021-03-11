@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feff7e283a5de834f855939c31fe46a0, type: 3}
   m_Name: FabricMasterTable
   m_EditorClassIdentifier: 
-  Fabrics: []
+  Fabrics:
+  - {fileID: 11400000, guid: 17f08312094709744bd8ebc3e19ea0d1, type: 2}
