@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4899060979016064063}
   - component: {fileID: 4899060979016064062}
   - component: {fileID: 4899060979016064033}
-  - component: {fileID: 4899060979016064032}
   - component: {fileID: 4899060979016064060}
+  - component: {fileID: 858817097782795751}
   m_Layer: 0
   m_Name: InventoryObject
   m_TagString: Untagged
@@ -97,21 +97,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4899060979016064032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4899060979016064034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 641002e470edcd04a9bcb57f26f7d9a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isColliding: 0
-  isMouseUp: 0
-  canBeDropped: 0
 --- !u!54 &4899060979016064060
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,3 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &858817097782795751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4899060979016064034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ab198aaba7eae74baaaf5963a27a5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isColliding: 0
+  isMouseUp: 0
+  canBeDropped: 0
